@@ -41,6 +41,8 @@ WORKDIR /usr/local/src/htm.core
 #! RUN python3 -m venv pyenv && . pyenv/bin/activate && python --version
 
 RUN ln -s /usr/bin/python3 /usr/local/bin/python && python --version 
+RUN python3 -m ensurepip
+RUN pip3 install --no-cache --upgrade pip setuptools
 
 RUN python -m pip install --upgrade setuptools pip wheel
 
