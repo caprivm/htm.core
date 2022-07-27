@@ -4,7 +4,7 @@ import os
 import numpy as np
 import math
 
-import htm_rest_api
+from lib import htm_rest_api
 
 # URL of the HTM server
 host = '127.0.0.1'                  # Get local machine IP, the default.

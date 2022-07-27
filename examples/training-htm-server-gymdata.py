@@ -5,12 +5,12 @@ import numpy as np
 import math
 import sys
 
-import htm_rest_api
+from lib import htm_rest_api
 
 # Load Data
 _EXAMPLE_DIR        = os.path.dirname(__file__)
-_INPUT_FILE_PATH    = os.path.join(_EXAMPLE_DIR, "gymdata.csv")
-_OUTPUT_FILE_PATH   = os.path.join(_EXAMPLE_DIR, "gymdata-htm-"+str(datetime.datetime.now().strftime('%Y-%m-%d-%H-%M-%S'))+".csv")
+_INPUT_FILE_PATH    = os.path.join(_EXAMPLE_DIR, "data/inputs/gymdata.csv")
+_OUTPUT_FILE_PATH   = os.path.join(_EXAMPLE_DIR, "data/outputs/gymdata-htm-"+str(datetime.datetime.now().strftime('%Y-%m-%d-%H-%M-%S'))+".csv")
 
 # Iterate through every datum in the dataset, record the inputs & outputs.
 inputs = []
